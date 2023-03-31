@@ -2,15 +2,21 @@
   <header>
     <Navbar />
   </header>
-  <main class="bg-sand">
-    <router-view />
+  <main class="bg-sand container-fluid">
+    <div class="row">
+      <div class="col-4">
+        Sidebar
+      </div>
+    </div>
+    <div class="col-8">
+      <router-view />
+    </div>
   </main>
-   <footer class="bg-dark text-light">
+  <footer class="bg-dark text-light">
     Made with 💖 by CodeWorks
   </footer>
 
-<Modal/>
-  
+  <Modal />
 </template>
 
 <script>
@@ -30,11 +36,11 @@ export default {
 <style lang="scss">
 @import "./assets/scss/main.scss";
 
-:root{
+:root {
   --main-height: calc(100vh - 32px - 64px);
 }
 
-.bg-sand{
+.bg-sand {
   background-color: #FFFAEF;
 }
 
